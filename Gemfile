@@ -43,3 +43,15 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'rails_12factor', group: :production
+
+group :development, :test do
+  gem 'sqlite3', '1.3.10'
+end
+
+group :production do
+  gem 'pg'
+end
+
+ruby "2.2.0"
+
